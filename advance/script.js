@@ -1,35 +1,35 @@
 var dishes = Array({ "id": 1,
-    "name": "Land Rover <span class='badge bg-my'>New</span>",
+    "name": "Cesar Salat <span class='badge bg-my'>New</span>",
     "image": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "price": 10,
     "description": "In congue. Etiam justo. Etiam pretium iaculis justo."
 }, {
     "id": 2,
-    "name": "Chrysler",
+    "name": "Pork Ribs",
     "image": "https://images.pexels.com/photos/3659862/pexels-photo-3659862.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "price": 15,
     "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est."
 }, {
     "id": 3,
-    "name": "Subaru",
+    "name": "Grill Plate",
     "image": "https://images.pexels.com/photos/3026805/pexels-photo-3026805.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "price": 6,
     "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
 }, {
     "id": 4,
-    "name": "Cadillac",
+    "name": "Veggi Plate",
     "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "price": 8,
     "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.<br>Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis."
 }, {
     "id": 5,
-    "name": "Cadillac <span class='badge bg-my'>New</span> ",
+    "name": "Pizza <span class='badge bg-my'>New</span> ",
     "image": "https://images.pexels.com/photos/604969/pexels-photo-604969.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "price": 9,
     "description": "Fusce consequat. Nulla nisl. Nunc nisl.<br>Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. <br>In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo."
 }, {
     "id": 6,
-    "name": "Mazda",
+    "name": "Cupcake",
     "image": "https://images.pexels.com/photos/853006/pexels-photo-853006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "price": 3,
     "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.<br>Phasellus in felis. Donec semper sapien a libero. Nam dui."
@@ -56,3 +56,13 @@ var items = document.getElementsByClassName("col");
 for (var i = 0; i < items.length; i++) {
     items[i].addEventListener('click', largeItem, false);
 }
+dishes.forEach(function (value) {
+    console.log(value);
+    var ids = value.id;
+    for (var i = 0; i < Array.length; i++) {
+        setTimeout(function () {
+            console.log(ids);
+            console.log(typeof ids);
+        }, 3000);
+    }
+});

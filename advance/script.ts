@@ -77,3 +77,17 @@ var items = document.getElementsByClassName("col");
 for (let i = 0; i < items.length; i++) {
     items[i].addEventListener('click', largeItem, false);
 }
+
+
+dishes.forEach(function(value){
+    console.log(value);
+    var ids = value.id;
+    for (let i = 0; i < Array.length; i++){
+        setTimeout(function(){
+        console.log(ids);
+        console.log(typeof ids);
+        }, 3000);
+    }
+
+});
+
