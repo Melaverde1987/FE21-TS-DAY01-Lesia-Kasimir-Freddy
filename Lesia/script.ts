@@ -27,7 +27,7 @@ let myTable = [
     }
 ];
 
-
+/*
 myTable.forEach(function (value) {
     console.log(value);
     var fullName = value.fName + ' ' + value.lName + '<br>';
@@ -37,6 +37,41 @@ myTable.forEach(function (value) {
         }, 2000);
     }
 });
+*/
 
 
-let mySecondArray: Array<string> = ['Anna', 'Rose', 'John', 'Johnny'];
+let myTable2 = [
+    {
+        id: 1,
+        fName: 'John',
+        lName: 'Doe'
+    },
+
+    {
+        id: 2,
+        fName: 'Anna',
+        lName: 'Smith'
+    },
+
+    {
+        id: 3,
+        fName: 'Jane',
+        lName: 'Eyre'
+    }
+];
+
+myTable2.forEach(function (value) {
+    var x = value.fName;
+    console.log(value.fName);
+
+    function declareType(x : string): string {
+        if (value.fName) {
+            return value.fName;
+        } else {
+            return "Hello there";
+        }
+    }
+    var result = declareType("x");
+    document.write(result);
+});
+
