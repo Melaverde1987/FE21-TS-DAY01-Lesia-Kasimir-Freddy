@@ -49,17 +49,25 @@ var myTable2 = [
         lName: 'Eyre'
     }
 ];
+// loops to take every item (object) in array
 myTable2.forEach(function (value) {
     var x = value.fName;
+    var y = value.lName;
+    var z = value.id;
     console.log(value.fName);
-    function declareType(x) {
-        if (value.fName) {
-            return value.fName;
+    //function to declare type of every item of object in this array
+    function declareType(x, y, z) {
+        if (x) {
+            return 'My name is ' + x + ' and my surname is ' + y + '<br>';
         }
         else {
             return "Hello there";
         }
     }
-    var result = declareType("x");
+    //output type of items
+    console.log(typeof (x));
+    console.log(typeof (y));
+    console.log(typeof (z));
+    var result = declareType(x, y, z);
     document.write(result);
 });
